@@ -12,6 +12,8 @@ app.get('/', (req, res) => {
     res.send('Hello from Express!');
 });
 
+
+
 app.get('/choose', (req, res) => {
     const filePath = path.join(__dirname, 'public', 'html/choose.html');
     res.sendFile(filePath);
@@ -27,12 +29,14 @@ app.get('/game', (req, res) => {
     res.sendFile(filePath);
 });
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use((req, res, next) => {
     const filePath = path.join(__dirname, 'public', 'html/404.html');
     res.sendFile(filePath);
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
+
 
 // Start the server
 app.listen(port, () => {
