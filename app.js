@@ -5,6 +5,8 @@ const port = process.env.PORT || 3000;
 // Middleware for parsing JSON request bodies
 app.use(express.json());
 
+app.use(express.static('public'))
+
 // Basic route
 app.get('/', (req, res) => {
   res.send('Hello from Express!');
