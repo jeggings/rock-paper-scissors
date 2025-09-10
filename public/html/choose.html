@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    Choose
-  </body>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="header">
+            Hello!
+        </div>
+        <div class="avatar-select">
+            <div class="avatar-choice" id="avatar1">Avatar 1</div>
+            <div class="avatar-choice" id="avatar2">Avatar 2</div>
+            <div class="avatar-choice" id="avatar3">Avatar 3</div>
+            <div class="avatar-choice" id="avatar4">Avatar 4</div>
+        </div>
+        <div class="name-input">
+             <input type="text" id="name" name="name" placeholder="Enter your name...">
+        </div>
+        <div class="room-input">
+            <input type="text" id="room-code" name="naroom-codeme" placeholder="Room Code...">
+            <button id="join-button">Join</button>
+        </div>
+        <div class="create-container">
+            <button id="create-button">Create</button>
+        </div>
+    </div>
+</body>
+<script src="scripts/choose.js"></script>
 </html>

@@ -1,3 +1,34 @@
-body{
+body {
     background-color: aliceblue;
+}
+
+
+.avatar-select {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-select>div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.selected-avatar {
+    background-color: #d6b512 !important; 
+}
+.name-input {
+    display: flex;
+    justify-content: center;
+}
+
+.room-input {
+    display: flex;
+    justify-content: center;
+}
+
+.create-container {
+    display: flex;
+    justify-content: center;
 }
