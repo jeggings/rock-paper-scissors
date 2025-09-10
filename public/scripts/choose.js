@@ -1,7 +1,8 @@
 const avatars = document.querySelectorAll(".avatar-choice")
 const joinButton = document.querySelector("#join-button")
 const createButton = document.querySelector("#create-button")
-
+const nameInput = document.querySelector("#name-input")
+const roomCodeInput = document.querySelector("#room-code-input")
 
 let selectedAvatar
 
@@ -25,9 +26,10 @@ const setSelected = (avatarID) => {
 setSelected(avatars[0].id)
 
 joinButton?.addEventListener('click', () => {
-    console.log('Join Button Clicked')
+    window.location.href = `/game?name=${nameInput?.value}&avatar=${selectedAvatar}&room=${roomCodeInput?.value}`;
 });
 
 createButton?.addEventListener('click', () => {
+    console.log(nameInput?.value)
     console.log('Create Button Clicked')
 });
